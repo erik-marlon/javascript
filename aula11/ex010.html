@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="txtvel" id="txtvel"> KM/h <!-- input para adicionar o campo para inserir o número -->
+    <input type="button" value="Verificar" onclick="calcular()"> <!-- input para o button | onclick para o evento -->
+    <div id="res"></div> <!-- div criada para demonstrar o resultado "res" -->
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('input#txtvel') // var txtv - Acessa a variável txtv | query procura o elemento HTML
+            res = document.querySelector('div#res') // Procura a div res, pra depois mostrar na linha "res.innerHTML"
+            var vel = Number(txtv.value) // Ajusta o conteúdo para números
+            res.innerHTML = `<p>Sua velocidade atual é de ${vel}</p>`
+            if (vel > 60) {
+                res.innerHTML += `<p>Multado</p>`
+            }
+        }
+    </script>
+</body>
+</html>

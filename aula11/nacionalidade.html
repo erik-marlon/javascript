@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" name="txtbra" id="txtbra">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var txtbra = document.querySelector('input#txtbra')
+            res = document.querySelector('div#res')
+            if (txtbra.value == 'Brasil') {
+                res.innerHTML = `Brasileiro!`
+            } else {
+                res.innerHTML = `Estrangeiro!`
+            }
+    }
+    </script>
+</body>
+</html>
