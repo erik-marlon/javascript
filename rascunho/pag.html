@@ -7,10 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Carga <input type="number" name="carga" id="carga"><br>
-    Tensão de Bateria <input type="number" name="bat" id="bat"><br>
-    Capacidade da Bateria <input type="number" name="cap" id="cap"><br>
-    Quantidade de Baterias <input type="number" name="txtcarga" id=""><br>
+    <h1>Calculadora de Autonomia</h1>
+    <div class="itens">
+        <label for="pot">Potência do Nobreak</label>
+        <input type="number" name="pot" id="pot" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="carsaida">% de carga na saída</label>
+        <input type="number" name="carsaida" id="carsaida" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="fpsaida">FP de saída</label>
+        <input type="number" name="fpsaida" id="fpsaida" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="inversor">Rendimento do inversor</label>
+        <input type="number" name="inversor" id="inversor" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="correntecatalogo">Corrente Catálogo</label>
+        <input type="number" name="correntecatalogo" id="correntecatalogo" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="tempocatalogo">Tempo Catálogo</label>
+        <input type="number" name="tempocatalogo" id="tempocatalogo" class="input-div">
+    </div>
+    <div class="potenciaconsumida"></div>
+    <div class="tensaobateria"></div>
+    <div class="correntedescarga"></div>
+    <div class="minutoscorrente"></div>
     <input type="button" value="Calcular" onclick="calcular()">
     <script src="app.js"></script>
 </body>

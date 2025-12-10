@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+body {
+    background-color: #F2F2F2;
+    text-align: center;
+}
+label {
+    margin: 10px;
+    display: flex;
+}
+.itens {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-div {
+    
+}
+.itens label {
+    width: 180px;
+}
