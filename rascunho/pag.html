@@ -9,34 +9,38 @@
 <body>
     <h1>Calculadora de Autonomia</h1>
     <div class="itens">
-        <label for="pot">Potência do Nobreak</label>
-        <input type="number" name="pot" id="pot" class="input-div">
+        <label for="potnb">Potência do Nobreak</label>
+        <input type="number" name="potnb" id="potnb" class="input-div">
     </div>
     <div class="itens">
-        <label for="carsaida">% de carga na saída</label>
-        <input type="number" name="carsaida" id="carsaida" class="input-div">
+        <label for="Pcargasaida">% na Saída</label>
+        <input type="number" name="Pcargasaida" id="Pcargasaida" class="input-div">
     </div>
     <div class="itens">
-        <label for="fpsaida">FP de saída</label>
-        <input type="number" name="fpsaida" id="fpsaida" class="input-div">
+        <label for="FPsaida">FP de Saída</label>
+        <input type="number" name="FPsaida" id="FPsaida" class="input-div">
     </div>
     <div class="itens">
-        <label for="inversor">Rendimento do inversor</label>
+        <label for="inversor">Rendimento do Inversor</label>
         <input type="number" name="inversor" id="inversor" class="input-div">
     </div>
+    <!--Cálculo de Autonomia-->
     <div class="itens">
-        <label for="correntecatalogo">Corrente Catálogo</label>
-        <input type="number" name="correntecatalogo" id="correntecatalogo" class="input-div">
+        <label for="Qbaterias">Quantidades de baterias</label>
+        <input type="number" name="Qbaterias" id="Qbaterias" class="input-div">
+    </div>
+    <div id="res1">
+        <label for="res1">Potência Consumida</label>
+    </div>
+    <div id="res2">
+        <label for="res2">Tensão de Bateria</label>
+    </div>
+    <div id="res3">
+        <label for="res3">Corrente de Descarga</label>
     </div>
     <div class="itens">
-        <label for="tempocatalogo">Tempo Catálogo</label>
-        <input type="number" name="tempocatalogo" id="tempocatalogo" class="input-div">
-    </div>
-    <div class="potenciaconsumida"></div>
-    <div class="tensaobateria"></div>
-    <div class="correntedescarga"></div>
-    <div class="minutoscorrente"></div>
-    <input type="button" value="Calcular" onclick="calcular()">
+    <!--Cálculo de Tensão de Bateria-->
+    <input type="button" value="Calcular" onclick="calcularPot()">
     <script src="app.js"></script>
 </body>
 </html>
