@@ -24,22 +24,22 @@
         <label for="inversor">Rendimento do Inversor</label>
         <input type="number" name="inversor" id="inversor" class="input-div">
     </div>
-    <!--Cálculo de Autonomia-->
     <div class="itens">
         <label for="Qbaterias">Quantidades de baterias</label>
         <input type="number" name="Qbaterias" id="Qbaterias" class="input-div">
     </div>
-    <div id="res1">
-        <label for="res1">Potência Consumida</label>
+    <div class="itens" id="res1">
+    <label>Potência Consumida: </label>
+    <span id="valorRes1"></span>
     </div>
-    <div id="res2">
-        <label for="res2">Tensão de Bateria</label>
+    <div class="itens" id="res2">
+    <label>Tensão de Bateria: </label>
+    <span id="valorRes2"></span>
     </div>
-    <div id="res3">
-        <label for="res3">Corrente de Descarga</label>
+    <div class="itens" id="res3">
+    <label>Corrente de Descarga: </label>
+    <span id="valorRes3"></span>
     </div>
-    <div class="itens">
-    <!--Cálculo de Tensão de Bateria-->
     <input type="button" value="Calcular" onclick="calcularPot()">
     <script src="app.js"></script>
 </body>
