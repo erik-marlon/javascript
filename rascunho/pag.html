@@ -6,6 +6,9 @@
     <title>Rascunho</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<header>
+    <img src="img/logo.png" alt="logotipo">
+</header>
 <body>
     <h1>Calculadora de Autonomia</h1>
     <div class="itens">
@@ -28,6 +31,14 @@
         <label for="Qbaterias">Quantidades de baterias</label>
         <input type="number" name="Qbaterias" id="Qbaterias" class="input-div">
     </div>
+    <div class="itens">
+        <label for="correnteCAT">Corrente Catálogo</label>
+        <input type="number" name="correnteCAT" id="correnteCAT" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="tempoCAT">Tempo Catálogo</label>
+        <input type="number" name="tempoCAT" id="tempoCAT" class="input-div">
+    </div>
     <div class="itens" id="res1">
         <label>Potência Consumida: </label>
         <span id="valorRes1"></span>
@@ -39,6 +50,10 @@
     <div class="itens" id="res3">
         <label>Corrente de Descarga: </label>
         <span id="valorRes3"></span>
+    </div>
+    <div class="itens" id="res4">
+        <label>Minutos @ Corrente: </label>
+        <span id="valorRes4"></span>
     </div>
     <input type="button" value="Calcular" onclick="calcularPot()">
     <script src="app.js"></script>
