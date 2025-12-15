@@ -17,4 +17,5 @@ function calcularPot() {
         document.querySelector('#valorRes2').innerText = Tensaobat + " V"
         document.querySelector('#valorRes3').innerText = Cdescarga.toFixed(2) + " A"
         document.querySelector('#valorRes4').innerText = minutoscorrente.toFixed(2)
+
 }
